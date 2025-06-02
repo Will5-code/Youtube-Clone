@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;              /* Keeps sidebar fixed in viewport during scrolling */
+  left: 0;                     /* Anchors sidebar to the left edge of the screen */
+  bottom: 0;                   /* Extends sidebar to the bottom of the viewport */
+  top: 55px;                   /* Leaves space at the top (likely for a header/navigation bar) */
+  background-color: white;     /* Clean, neutral background for contrast */
+  width: 72px;                 /* Fixed width for consistent sidebar size */
+  z-index: 200;                /* Ensures sidebar stays above other page elements */
+  padding-top: 5px;            /* Small padding to separate sidebar content from top edge */
+}
+
+.sidebar-link {
+  height: 74px;                /* Uniform height for each sidebar link */
+  display: flex;               /* Uses flexbox for easy alignment */
+  justify-content: center;     /* Centers content horizontally */
+  align-items: center;         /* Centers content vertically */
+  flex-direction: column;      /* Stacks image and text vertically */
+  cursor: pointer;             /* Pointer cursor indicates the link is clickable */
+}
+
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235);  /* Light gray hover effect for visual feedback */
+}
+
+.sidebar-link img {
+  height: 24px;                /* Controls icon size for consistency */
+  margin-bottom: 4px;          /* Spacing between icon and text */
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial;  /* Clean, modern sans-serif fonts */
+  font-size: 10px;             /* Small font size to fit the sidebar's narrow width */
+}

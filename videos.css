@@ -1,0 +1,97 @@
+
+/* Ensures thumbnails take up full width of their container for responsive scaling */
+.thumbnail {
+  width: 100%;
+}
+
+/* Changes cursor to pointer on hover to indicate the thumbnail is clickable */
+.thumbnail:hover {
+  cursor: pointer;
+}
+
+/* Styles for video titles with clear hierarchy and spacing */
+.video-title {
+  margin-top: 0;             /* Removes default top margin for tight spacing */
+  font-size: 14px;           /* Sets readable text size for titles */
+  font-weight: 500;          /* Medium font weight for emphasis */
+  line-height: 20px;         /* Provides comfortable line spacing */
+  margin-bottom: 10px;       /* Adds spacing below title */
+}
+
+/* Layout for video info using CSS Grid for two columns: profile pic and text */
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;  /* Fixed width for profile picture, flexible for text */
+}
+
+/* Profile picture styling to create a circular avatar */
+.profile-picture {
+  width: 36px;               /* Sets fixed width for consistent avatar size */
+  border-radius: 50px;       /* Makes the image circular */
+}
+
+/* Pointer cursor on profile pictures to indicate interactivity */
+.profile-picture:hover {
+  cursor: pointer;
+}
+
+/* Container for thumbnail and spacing */
+.thumbnail-row {
+  margin-bottom: 8px;        /* Space below each thumbnail */
+  position: relative;        /* Enables absolute positioning of child elements */
+}
+
+/* Video author text styling */
+.video-author {
+  font-size: 12px;           /* Smaller font size for secondary info */
+  color: rgb(96, 96, 96);    /* Subtle gray color for less emphasis */
+  margin-bottom: 4px;        /* Space below author text */
+}
+
+/* Pointer cursor on video author text indicating clickable element */
+.video-author:hover {
+  cursor: pointer;
+}
+
+/* Styling for video statistics text */
+.video-stats {
+  font-size: 12px;           /* Consistent smaller font size */
+  color: rgb(96, 96, 96);    /* Matches author text color */
+  margin-bottom: 20px;       /* Adds space below stats for layout clarity */
+}
+
+/* Grid layout for video previews with 3 columns and gaps */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+  column-gap: 16px;                    /* Horizontal spacing between videos */
+  row-gap: 40px;                      /* Vertical spacing between videos */
+}
+
+/* Responsive adjustment for smaller screens: 2 columns */
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Responsive adjustment for larger screens: 4 columns */
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Styling for video duration label positioned over thumbnail */
+.video-time {
+  font-family: 'Roboto', Arial;  /* Matches main typography */
+  font-weight: 500;              /* Medium emphasis */
+  padding: 4px;                  /* Padding for readability */
+  border-radius: 2px;            /* Slightly rounded corners */
+  background-color: black;       /* High contrast background for visibility */
+  color: white;                  /* Text color for readability */
+  position: absolute;            /* Positioned relative to thumbnail container */
+  bottom: 8px;                   /* Bottom offset inside thumbnail */
+  right: 5px;                    /* Right offset inside thumbnail */
+  font-size: 12px;               /* Small font size to fit in thumbnail */
+}

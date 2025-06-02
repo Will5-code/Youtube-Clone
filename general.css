@@ -1,0 +1,13 @@
+p {
+  font-family: "roboto", arial, sans-serif; /* Set font family with Roboto as primary, fallback to Arial and sans-serif */
+  margin-top: 0;                            /* Remove default top margin for consistent spacing */
+  margin-bottom: 0;                         /* Remove default bottom margin for consistent spacing */
+}
+
+body {
+  margin: 0;                               /* Remove default body margin to reset layout */
+  padding-top: 80px;                       /* Add top padding to offset fixed header height */
+  padding-left: 96px;                      /* Add left padding for content spacing */
+  padding-right: 24px;                     /* Add right padding for content spacing */
+  background-color: rgb(248, 248, 248);   /* Light gray background color for subtle contrast */
+}
